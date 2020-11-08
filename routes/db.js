@@ -5,25 +5,25 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/tonobil', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const Car = mongoose.model('Advertise_Schema', { 
-    title: string,
-    basePrice: number,
-    onTheRoadPrice: number,
-    Type: string,
-    Brand:  string,
-    Model:  string,
-    Variant: string,
-    Year:  number,
-    Transmission:  string,
-    Engine: number,
-    Seat_capacity:  number,
-    MIleage:  number,
-    Color:  string,
-    Specification:  object,
-    Equipment:  object,
-    Seller:   object,
+    title: String,
+    basePrice: Number,
+    onTheRoadPrice: Number,
+    type: String,
+    Brand:  String,
+    Model:  String,
+    Variant: String,
+    Year:  Number,
+    Transmission:  String,
+    Engine: Number,
+    Seat_capacity:  Number,
+    MIleage:  Number,
+    Color:  String,
+    Specification:  Object,
+    Equipment:  Object,
+    Seller:   Object,
     CreatedAt:  Date,
     UpdatedAt:  Date,
-    OtherDetail:  string
+    OtherDetail:  String
     // Specification
 
 });
