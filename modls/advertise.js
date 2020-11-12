@@ -23,3 +23,7 @@ const advertiseScema = new Schema({
     UpdatedAt:  Date,
     OtherDetail:  String
 })
+
+// 
+
+module.exports = mongoose.model('adertise', advertiseScema);
