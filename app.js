@@ -20,6 +20,7 @@ const advertiseRoute = require('./routes/advertise');
 
 // Use
 app.use('/',indexRoute);
+app.use(express.json());
 app.use('/advertise', advertiseRoute);
 
 app.listen(3000, ()=>{
