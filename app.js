@@ -1,6 +1,9 @@
 // Express basic
 const express = require('express');
 
+// Hapi Joi
+const Joi = require('@hapi/joi');
+
 // Mongo / Mongoose [Database]
 const mongoose = require('mongoose');
 const url = 'mongodb://localhost:27017/tonobil';
@@ -15,8 +18,8 @@ con.on('open', ()=>{
 });
 
 // Routers
-const indexRoute = require('./routes/index');
-const advertiseRoute = require('./routes/advertise');
+const indexRoute = require('./lib/routes/index');
+const advertiseRoute = require('./lib/routes/advertise');
 
 // Use
 app.use('/',indexRoute);
