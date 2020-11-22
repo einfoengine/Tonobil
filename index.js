@@ -20,11 +20,13 @@ con.on('open', ()=>{
 // Routers
 const indexRoute = require('./lib/routes/index');
 const advertiseRoute = require('./lib/routes/advertise');
+const salersRout = require('./lib/routes/salers');
 
 // Use
-app.use('/',indexRoute);
 app.use(express.json());
+app.use('/',indexRoute);
 app.use('/advertise', advertiseRoute);
+app.use('/salers', salersRout);
 
 app.listen(3000, ()=>{
 
